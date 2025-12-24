@@ -95,10 +95,6 @@
                 <a href="#" title="Twitter" class="twitter"></a>
             </div> -->
 
-            <audio autoplay loop id="autoaudio">
-                <source src="media/audio.mp3" type="audio/mpeg">
-            </audio>
-
             <h2 style="text-align: center; padding-top: 5vh;">Welcome aboard!</h2>
             <p style="text-align: center; padding-bottom: 5vh;">This is the ApatheticDELL Center website, where you can find all things created and operated by ApatheticDELL.</p>
 
@@ -180,17 +176,5 @@
             <p>Copyright &#169; ApatheticDELL</p>
             <br/><br/>
         </footer>
-
-        <script>
-            document.addEventListener('DOMContentLoaded', (event) => {
-                const audioPlayer = document.getElementById('autoaudio');
-                const pageContent = document.getElementById('maincontent');
-                pageContent.addEventListener('click', () => {
-                    audioPlayer.play()
-                        .catch(error => {
-                        });
-                }, { once: true });
-            });
-        </script>
     </body>
 </html>
