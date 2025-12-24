@@ -1,45 +1,83 @@
-/* Everything on the nav */
-.nav {
-    background-color: #0064ff;
-    padding: 1em;
-    color: white;
-    font-size: larger;
-    font-weight: bold;
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
-}
+/* Site nav crap */
 
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #0050ff;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 5em;
-}
-
-.sidenav a, .sidenav span {
-    padding-left: 1em;
-    padding-bottom: 1em;
-    text-decoration: none;
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
     font-size: large;
-    color: #ffffff;
-    display: block;
-    transition: 0.3s;
+    background-color: #0064ff;
+    color: white;
+    padding: 0.5rem 1rem;
+}
+nav img {
+    width: 50px;
+    height: auto;
+}
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+.site-title {
+    font-weight: bold;
+}
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+nav a:visited, nav a:link {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+}
+nav a:hover {
+    color: aqua;
+}
+nav a:active {
+    color: white;
 }
 
-.sidenav a:hover { color: #a3c9ff; }
-
-.sidenav .closebtn {
-    position: absolute;
-    top: 1em;
-    right: 1em;
-    font-size: xx-large;
+footer {
+    background-color: #0064ff;
+    color: white;
+    padding: 1vh;
+    text-align: center;
 }
 
-.sidenav .active { font-weight: bold; cursor:pointer; }
+footer a {
+    color: white;
+}
+
+/* Responsive: stack nav items on small screens */
+@media (max-width: 700px) {
+    nav {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+    }
+    .nav-left {
+        padding: 0.25rem 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-right {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        align-items: stretch;
+        width: 100%;
+    }
+    nav a:visited, nav a:link {
+        padding: 0.75rem 1rem;
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid rgba(255,255,255,0.08);
+    }
+}
+
+@media (max-width: 400px) {
+    .site-title { font-size: 1rem; }
+    nav a { font-size: 0.95rem; padding: 0.6rem 0.8rem; }
+}
