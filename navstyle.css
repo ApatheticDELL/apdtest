@@ -1,0 +1,45 @@
+/* Everything on the nav */
+.nav {
+    background-color: #0064ff;
+    padding: 1em;
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #0050ff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 5em;
+}
+
+.sidenav a, .sidenav span {
+    padding-left: 1em;
+    padding-bottom: 1em;
+    text-decoration: none;
+    font-size: large;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover { color: #a3c9ff; }
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    font-size: xx-large;
+}
+
+.sidenav .active { font-weight: bold; cursor:pointer; }

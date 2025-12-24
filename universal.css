@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}  
+
+html { background-color: #0064ff; }
+
+body {
+    background-color: #1a1a1a;
+    color:white;
+}
+
+p {
+    font-size: large;
+}
+
+main {
+    margin-left: 3vw;
+    margin-right: 3vw;
+    padding-bottom: 5vh;
+}
+
+h1 {
+    text-align: center;
+}
+
+.button {
+    display: flex;
+    background-color: #0064ff;
+    text-decoration: none;
+    color: white;
+    padding: 1vh;
+    width: 15vw;
+    max-width: 15vw;
+    border-radius: 10px;
+    justify-content: center;
+    margin: 1vh;
+    text-align: center;
+}
+.button:hover { font-weight: bold; }
+.button:active { background-color: #00388b; color: white; }
+
+
+
+/* everything for the "social quicklinks" */
+.social_quicklinks {
+    display: flex;
+    gap: 1vw;
+    padding: 2vh;
+    justify-content: center;
+}
+.social_quicklinks a {
+    padding: 3vh;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.social_quicklinks .youtube { background-image: url(./assets/social/youtube.png); }
+.social_quicklinks .discord { background-image: url(./assets/social/discord.png); }
+.social_quicklinks .bluesky { background-image: url(./assets/social/bluesky.png); }
+.social_quicklinks .twitter { background-image: url(./assets/social/twitter.png); }
+
+@media (max-width: 1000px) {
+    .button {
+        display: flex;
+        background-color: #0064ff;
+        text-decoration: none;
+        color: white;
+        padding: 1vh;
+        width: 50vw;
+        max-width: 50vw;
+        border-radius: 1.5vh;
+        justify-content: center;
+        margin: 1vh;
+        text-align: center;
+    }
+}
+
+@media (max-height: 800px) {
+    .social_quicklinks a {
+        padding: 5vh;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
+
+/* Site nav crap */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    font-size: large;
+    background-color: #0064ff;
+    color: white;
+    padding: 0.5rem 1rem;
+}
+nav img {
+    width: 50px;
+    height: auto;
+}
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+.site-title {
+    font-weight: bold;
+}
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+nav a:visited, nav a:link {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+}
+nav a:hover {
+    color: aqua;
+}
+nav a:active {
+    color: white;
+}
+
+footer {
+    background-color: #0064ff;
+    color: white;
+    padding: 1vh;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+}
+
+/* Responsive: stack nav items on small screens */
+@media (max-width: 700px) {
+    nav {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+    }
+    .nav-left {
+        padding: 0.25rem 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-right {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        align-items: stretch;
+        width: 100%;
+    }
+    nav a:visited, nav a:link {
+        padding: 0.75rem 1rem;
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid rgba(255,255,255,0.08);
+    }
+}
+
+@media (max-width: 400px) {
+    .site-title { font-size: 1rem; }
+    nav a { font-size: 0.95rem; padding: 0.6rem 0.8rem; }
+}
+
+
+.advanced_button {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(12, 12, 86);
+    align-items: center;
+    transition-property: font;
+	transition-duration: 100ms;
+}
+
+.advanced_button img {
+    width: 100px;
+    height: auto;
+    padding: 8px;
+}
+
+.advanced_button a:visited, .advanced_button a:link {
+    color: white;
+    text-decoration: none;
+}
+
+.advanced_button:hover {
+    background-color: rgb(0, 255, 255);
+    cursor: pointer;
+}

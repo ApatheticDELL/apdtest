@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Created by ApatheticDELL -->
+        <title>ApatheticDELL Center</title>
+        <link rel="stylesheet" href="./../navstyle.css">
+        <link rel="stylesheet" href="./../universal.css">
+        <link rel="icon" type="image/x-icon" href="./../assets/favicon.png">
+    </head>
+    <style>
+        main {
+            text-align: center;
+        }
+
+        img {
+            width: 35vh;
+            height: auto;
+        }
+    </style>
+    <body>
+        <!-- Website navigation -->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="./../index.html">Home</a>
+            <a href="./../projects.html">Projects/Services</a>
+            <a href="./../social.html">Social Media</span>
+            <a href="./../about.html">About</a>
+        </div>
+        <div class="nav">
+            <span style="cursor:pointer" onclick="openNav()">&#9776; The ApatheticDELL Center</span>
+            <script>
+                function openNav() { document.getElementById("mySidenav").style.width = "250px"; }
+                function closeNav() { document.getElementById("mySidenav").style.width = "0"; }
+            </script>
+        </div>
+
+        <main>
+            <h1>Uh oh</h1>
+            <p>I think the server is fu*ked. (500 - Internal server error)</p>
+            <img src="./dell_ouch.png" />
+            <p>Maybe... you can go back <a href="./../index.html">home</a>?</p>
+        </main>
+
+        <footer>
+            <p>Copyright &#169; ApatheticDELL 2024</p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>CWXV - The WeatherVibe</title>
+        <style>
+            /* Import Montserrat font */
+            @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+            * {
+                font-family: Montserrat, Arial, Helvetica, sans-serif;
+                font-size: large;
+            }
+
+            html, body { margin: 0; padding: 0; }
+
+            html { background-color: #ff00ff; }
+
+            body { background-color: rgb(28, 28, 28); }
+
+            header { background-color: #ff00ff; padding: 2vh; display: grid; grid-template-columns: auto auto; }
+            header span { grid-column: 1; color: black; font-weight: bold; }
+            /*header a:link, header a:visited { grid-column: 2; text-align: right; color: black; text-decoration: none; }
+            header a:active, header a:hover { grid-column: 2; text-align: right; color: black; font-weight: bold; }
+            */
+
+            .header_title { display: flex; align-items: center; }
+
+            header .adc_return {
+                grid-column: 2;
+                display: flex;
+                justify-content: right;
+            }
+
+            footer { padding: 1vh; background-color: #ff00ff; text-align: center; }
+            .info_list {
+                margin-top: 5vh;
+                margin-bottom: 5vh;
+                margin-left: 10vw;
+                margin-right: 10vw;
+                color: white;
+            }
+            .second_header {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+                gap: 3vh;
+                background-color: #aa29ff;
+            }
+            .info { text-align: left; }
+            .title { font-size: xx-large; font-weight: bold; color: white; }
+            .stream_info {
+                display: flex;
+                background-color: #003366; /* Dark blue */
+                color: white;
+                padding-left: 2vw;
+                padding-right: 2vw;
+                padding-top: 0.5vh;
+                padding-bottom: 0.5vh;
+                border-radius: 10vh;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                max-width: 30vw;
+                width: 30vw;
+                text-align: center;
+                justify-content: center;
+            }
+
+            .button {
+                display: flex;
+                background-color: #9900ff;
+                text-decoration: none;
+                color: white;
+                padding: 1vh;
+                width: 15vw;
+                max-width: 15vw;
+                border-radius: 1.5vh;
+                justify-content: center;
+                margin: 1vh;
+                text-align: center;
+            }
+
+            .button:hover { font-weight: bold; }
+            .button:active { background-color: #aa29ff; color: white; }
+            .logo {
+                width: 40vw;
+                height: auto;
+            }
+
+            .adc_return .button {
+                width: 20vw;
+                max-width: 20vw;
+            }
+
+            @media (max-width: 800px) {
+                .button {
+                    display: flex;
+                    background-color: #9900ff;
+                    text-decoration: none;
+                    color: white;
+                    padding: 1vh;
+                    width: 30vw;
+                    max-width: 30vw;
+                    border-radius: 1.5vh;
+                    justify-content: center;
+                    margin: 1vh;
+                    text-align: center;
+                }
+
+                .adc_return .button {
+                    font-size: small;
+                }
+
+                .logo {
+                    width: 70vw;
+                    height: auto;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="header_title"><span>WeatherVibe (CWXV)</span></div>
+            <div class="adc_return">
+                <a href="./../index.html" class="button">Return to ApatheticDELL Center</a>
+            </div>
+        </header>
+
+        <main>
+            <div class="second_header">
+                <br/>
+                
+                <img class="logo" src="./assets/CWXV_Logo.png" />
+                
+                <div class="stream_info">
+                    <p id="currently-playing"></p>
+                </div>
+
+                <audio src="https://icecast.wxstream.org/IP/CWXV" autoplay="true" controls="true"></audio>
+                <br/>
+            </div>
+
+            <div class="info_list">
+                <div class="info">
+                    <h2>About</h2>
+                    <p>CWXV, the WeatherVibe. CWXV is an individual hobby internet radio station located in Canada Ontario. It is operated by ApatheticDELL. It broadcasts non copyrighted music, talk shows, News, and Weather Information, 24/7. The main focus is Weather and EAS, but when those aren't happening, Music and other programming tend to take over.</p>
+
+                    <p>Music on CWXV is from No Copyright Sounds (NCS) releases and YouTube's Audio Library. WeatherVibe (CWXV) IS NOT COMMERCIAL!</p>
+                    
+                    <p>CWXV is an Internet-only radio station and is NOT (and should not be) broadcasting on any AM/FM or other band frequencies.</p>
+
+                    <p>CWXV's Anniversary: June 29 2021</p>
+
+                    <a href="./../index.html" class="button">ApatheticDELL Center</a>
+                    <a href="#" class="button">Donate</a>
+                </div>
+
+                <div class="info">
+                    <h2>Icecast Server</h2>
+                    <p>CWXV is currently broadcasting on the WXstream Icecast server. You can find CWXV on the list and view the Currently playing track/status, along with other cool stations.</p>
+                    <a href="#" class="button">WXstream Icecast</a>
+                </div>
+
+                <div class="info">
+                    <h2>Discord Server</h2>
+                    <p>Get updates about CWXV, contact/interact with the station, view EAS text/images, and more on our Discord server.</p>
+                    <a href="#" class="button">A.D.S Discord</a>
+                </div>
+
+                <div class="info">
+                    <h2>Also on Hopcast</h2>
+                    <p>We're also broadcasting on HopCast! (But very experimental, may not be available on HopCast at all times).</p>
+                    <a href="#" class="button">Hopcast</a>
+                </div>
+
+                <div class="info">
+                    <h2>Emergency Alerts</h2>
+                    <p>The EAS community may suck, but we're still keeping the EAS in CWXV! S.A.M.E Emergency Alerting is available on CWXV. We use a special software ENDEC called "QuantumENDEC." It decodes alerts from the official Pelmorex NAAD stream and encodes it into the S.A.M.E protocol, this is very similar to USA's IPAWS CAP.</p> 
+                        
+                    <p>Coverage: All of Canada and All of the United States. Mostly for moderate to severe alerts.</p>
+                        
+                    <p>(Do not let your safety fully depend on CWXV. CWXV or contents such as SAME headers or EAS should NOT be broadcasted on airways, CWXV should be online only. I won't be responsible if someone broadcasts CWXV SAME headers on air)</p>
+                    
+                    <p>Required Weekly tests are transmitted every Saturday at 17:00 UTC. Required Monthly tests are transmitted every month on the first Saturday at 01:30 UTC. Because CWXV is in Canada, the provincial Alert Ready tests will also be relayed... for... every... single... province... (there are 10 provinces in Canada, and 3 territories)</p>
+
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>Copyright ApatheticDELL 2024</p>
+        </footer>
+    </body>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            /* const streamUrl = 'http://cast.bunnytub.com:8000/status-json.xsl'; // Icecast server URL
+            const targetListenUrl = 'http://cast.bunnytub.com:8000/CWXV'; */
+            const streamUrl = 'https://icecast.wxstream.org/status-json.xsl'; // Icecast server URL
+            const targetListenUrl = 'http://icecast.wxstream.org:8000/IP/CWXV';
+            const currentlyPlayingElement = document.getElementById('currently-playing');
+
+            function fetchStreamInfo() {
+                fetch(streamUrl)
+                    .then(response => response.json())
+                    .then(data => {
+                        // Check if data contains 'icestats' and 'source' array
+                        if (data.icestats && data.icestats.source && data.icestats.source.length > 0) {
+                            const source = data.icestats.source.find(src => src.listenurl === targetListenUrl);
+
+                            if (source) {
+                                const currentlyPlaying = source.title || 'Unknown';
+                                currentlyPlayingElement.textContent = `${currentlyPlaying}`;
+                            } else {
+                                currentlyPlayingElement.textContent = 'Source not found';
+                            }
+                        } else {
+                            currentlyPlayingElement.textContent = 'Data not available';
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error fetching stream info:', error);
+                        currentlyPlayingElement.textContent = 'Error';
+                    });
+            }
+
+            // Fetch stream info every 10 seconds
+            fetchStreamInfo();
+            setInterval(fetchStreamInfo, 10000);
+        });
+    </script>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.social_quicklinks {
+    display: flex;
+    gap: 1vw;
+    padding: 2vh;
+    justify-content: center;
+}
+
+.social_quicklinks a {
+    padding: 3vh;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@media (max-height: 800px) {
+    .social_quicklinks a {
+        padding: 5vh;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
+.social_quicklinks .youtube { background-image: url(./assets/social/youtube.png); }
+.social_quicklinks .discord { background-image: url(./assets/social/discord.png); }
+.social_quicklinks .bluesky { background-image: url(./assets/social/bluesky.png); }
+.social_quicklinks .twitter { background-image: url(./assets/social/twitter.png); }
+</style>
+</head>
+<body>
+
+<h2>Style Social Media Buttons</h2>
+
+<div class="social_quicklinks">
+    <a href="#" title="YouTube" class="youtube"></a>
+    <a href="#" title="Discord" class="discord"></a>
+    <a href="#" title="Bluesky" class="bluesky"></a>
+    <a href="#" title="Twitter" class="twitter"></a>
+</div>
+      
+</body>
+</html> 

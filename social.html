@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Created by ApatheticDELL -->
+        <title>ApatheticDELL Center</title>
+        <link rel="stylesheet" href="./navstyle.css">
+        <link rel="stylesheet" href="./universal.css">
+        <link rel="icon" type="image/x-icon" href="./assets/favicon.png">
+        <style>
+            .project { padding-bottom: 3vh; }
+            .projects_list {
+                display: flex;
+                flex-direction: column;
+            }
+            main {
+                display: flex;
+                flex-direction: column;
+                align-items: left;
+                margin-left: 25vw;
+                margin-right: 25vw;
+            }
+            header {
+                text-align: center;
+            }
+
+            @media (max-width: 800px) {
+                main {
+                    margin-left: 5vw;
+                    margin-right: 5vw; }
+            }
+
+            .projects_list a:link, .projects_list a:visited {
+                color: aqua;
+            }
+
+        </style>
+    </head>
+    <body>
+        <!-- Website navigation -->
+        <nav class="site-nav">
+            <div class="nav-left">
+                <img src="./assets/adlogo.png" alt="Logo" />
+                <span class="site-title">ApatheticDELL</span>
+            </div>
+            <div class="nav-right">
+                <a href="./index.html">Home</a>
+                <a href="./projects.html">Projects</a>
+                <a class="site-title" href="./social.html">Socials</a>
+                <a href="./about.html">About</a>
+            </div>
+        </nav>
+
+        <main>
+            <header>
+                <h1>Social Media</h1>
+                <p>The following is a list of the offical social media sites operated by ApatheticDELL.</p>
+            </header>
+
+            <div class="social_quicklinks">
+                <a href="#" title="YouTube" class="youtube"></a>
+                <a href="#" title="Discord" class="discord"></a>
+                <a href="#" title="Bluesky" class="bluesky"></a>
+                <a href="#" title="Twitter" class="twitter"></a>
+            </div>
+
+            <div>
+                <h1>Linktree style button</h1>
+                <p>the new approach</p>
+
+                <div class="advanced_button" onclick="window.location.href = `https://bsky.app/profile/apatheticdell.bsky.social`">
+                    <img src="./assets/social/bluesky.png" style="height: 64px; width: auto;" />
+                    <a href="#">
+                        <span style="height: 64px; vertical-align: middle; display: table-cell;">Bluesky (@ApatheticDELL)</span>
+                    </a>
+                </div>
+
+            </div>
+
+
+            
+            <div class="projects_list">
+                <div class="project">
+                    <h2>Mostly used</h2>
+                    <span><strong>Bluesky: </strong></span><a href="">@apatheticdell.bluesky.social</a><br/>
+                    <span><strong>Twitter: </strong></span><a href="">@ApatheticDELL</a><br/>
+                    <span><strong>Offical Email: </strong></span><a href="mailto:apatheticdell@proton.me">apatheticdell@proton.me</a><br/>
+                </div>
+
+                <div class="project">
+                    <h2>My other accounts</h2>
+                    <span><strong>Reddit: </strong></span><a href="">u/ApatheticDELL</a><br/>
+                    <span><strong>TikTok: </strong></span><a href="">@ApatheticDELL</a><br/>
+                    <span><strong>Tumbler: </strong></span><a href="">apatheticdell</a><br/>
+                    <span><strong>Instagram: </strong></span><a href="">apatheticdell</a><br/>
+                </div>
+
+                <div class="project">
+                    <h2>Art related sites</h2>
+                    <span><strong>DeviantArt: </strong></span><a href="">ApatheticDELL</a><br/>
+                    <span><strong>FurAffinity: </strong></span><a href="">apatheticdell</a><br/>
+                </div>
+            </div>
+
+        </main>
+
+        <footer>
+            <p>Copyright &#169; ApatheticDELL</p>
+            <a href="./social.html">Contact</a>
+            <br/><br/>
+        </footer>
+    </body>
+</html>

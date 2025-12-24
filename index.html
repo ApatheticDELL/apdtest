@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!-- Created by ApatheticDELL -->
+        <title>ApatheticDELL Center</title>
+        <link rel="stylesheet" href="./navstyle.css">
+        <link rel="stylesheet" href="./universal.css">
+        <link rel="icon" type="image/x-icon" href="./assets/favicon.png">
+        <style>
+            .bulliten {
+                background-color: #0064ff;
+                color: white;
+                border-radius: 10px;
+                padding: 2vh;
+                margin-bottom: 1vh;
+            }
+
+            .bulliten_urgent {
+                background-color: #ff6400;
+                color: white;
+                border-radius: 10px;
+                padding: 2vh;
+                margin-bottom: 1vh;
+            }
+            
+            .quick_links {
+                display: flex;
+                justify-content: center;
+            }
+
+            header {
+                background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./assets/flight.jpg);
+                background-size:cover;
+                color: white;
+                padding-top: 10vh;
+                padding-bottom: 10vh;
+                padding-left: 10vw;
+                padding-right: 10vw;
+                background-position: 0 -20vh;
+                /*
+                background-image: url(./assets/flight.jpg);
+                background-position: 0 -20vh;
+                background-size: 100%;
+                background-color: blue; */
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .discord_embed {
+                padding: 2vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 1vw;
+                height: 50vh;   
+            }
+
+            header img {
+                width: 300px;
+                height: auto;
+            }
+
+            @media (max-width: 1000px) {
+                header {
+                    background-position: center;
+                }
+
+                header img {
+                    width: 40vw;
+                }
+
+                header h1 {
+                    font-size: 5vw;
+                }
+
+                .discord_embed {
+                    flex-direction: column;
+                    height: 100vh;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Website navigation -->
+        <nav class="site-nav">
+            <div class="nav-left">
+                <img src="./assets/adlogo.png" alt="Logo" />
+                <span class="site-title">ApatheticDELL</span>
+            </div>
+            <div class="nav-right">
+                <a class="site-title" href="./index.html">Home</a>
+                <a href="./projects.html">Projects</a>
+                <a href="./social.html">Socials</a>
+                <a href="./about.html">About</a>
+            </div>
+        </nav>
+
+        <header>
+            <img src="./assets/adlogo.png" />
+        </header>
+
+        <main>
+            
+            <div class="social_quicklinks">
+                <a href="#" title="YouTube" class="youtube"></a>
+                <a href="#" title="Discord" class="discord"></a>
+                <a href="#" title="Bluesky" class="bluesky"></a>
+                <a href="#" title="Twitter" class="twitter"></a>
+            </div>
+
+            <h2 style="text-align: center;">Welcome aboard!</h2>
+            <p style="text-align: center;">This is the ApatheticDELL Center website, where you can find all things created and operated by ApatheticDELL.</p>
+
+            <div class="quick_links">
+                <a href="#" class="button">Buy me a coffee</a>
+                <a href="#" class="button">ApatheticDELL Channel</a>
+                <a href="#" class="button">ApatheticDELL Discord</a>
+            </div>
+            
+            
+
+            <div class="discord_embed">
+                <iframe width=100% height=100% src="https://www.youtube-nocookie.com/embed/-BHQwbDKw_A?si=VCo_Ai3VNkZGGMWV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe src="https://discord.com/widget?id=452883091460063264&theme=dark" width=50% height=100% allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+            </div>
+
+            <h2>This, is a test!</h2>
+            <p>Yes, this is the offical ApatheticDELL, but we're testing stuff right now. This is offically not offical <em>yet</em>. Down the line in the future, I plan to self-host the ApatheticDELL website. This may be released if Google ever decides to kill Google sites.</p>
+
+            <h2>Bullitens</h2>
+            
+            <div class="bulliten">
+                <h3>[[DRAFT:]] Welcome aboard to the new offical ApatheticDELL website</h3>
+                <p>Google has decided to kill (yet again) another service that I kinda depend on.</p>
+            </div>
+
+            <div class="bulliten_urgent">
+                <h3>Emergency bulliten</h3>
+                <p>Will be used for emergency announcements that are urgent.</p>
+            </div>   
+        </main>
+
+        <footer>
+            <p>Copyright &#169; ApatheticDELL</p>
+            <a href="./social.html">Contact</a>
+            <br/><br/>
+        </footer>
+    </body>
+</html>
