@@ -46,21 +46,32 @@ h1 {
 .button:hover { font-weight: bold; }
 .button:active { background-color: #00388b; color: white; }
 
-
-
 /* everything for the "social quicklinks" */
+
 .social_quicklinks {
     display: flex;
     gap: 1vw;
     padding: 2vh;
     justify-content: center;
+    height: 64px;
 }
+
 .social_quicklinks a {
     padding: 3vh;
-    background-position: center;
-    background-size: contain;
+    background-position: top;
+    background-size: cover;
     background-repeat: no-repeat;
+    height: 18px;
+    width: 18px;
+    transition-duration: 150ms;
+    transition-property: all;
 }
+
+.social_quicklinks a:hover {
+    height: 24px;
+    width: 24px;
+}
+
 .social_quicklinks .youtube { background-image: url(./assets/social/youtube.png); }
 .social_quicklinks .discord { background-image: url(./assets/social/discord.png); }
 .social_quicklinks .bluesky { background-image: url(./assets/social/bluesky.png); }
@@ -180,10 +191,13 @@ footer a {
 .advanced_button {
     display: flex;
     flex-direction: row;
-    background-color: rgb(12, 12, 86);
+    background-color: rgb(38, 38, 136);
     align-items: center;
-    transition-property: font;
-	transition-duration: 100ms;
+    transition-property: all;
+	transition-duration: 150ms;
+	border-radius: 16px;
+    font-size: large;
+    letter-spacing: 1px;
 }
 
 .advanced_button img {
@@ -198,6 +212,7 @@ footer a {
 }
 
 .advanced_button:hover {
-    background-color: rgb(0, 255, 255);
+    background-color: rgb(40, 88, 160);
     cursor: pointer;
+    letter-spacing: 2px;
 }
