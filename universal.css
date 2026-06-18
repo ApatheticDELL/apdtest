@@ -46,6 +46,52 @@ h1 {
 .button:hover { font-weight: bold; }
 .button:active { background-color: #00388b; color: white; }
 
+.page-header {
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./assets/mcbridge.png);
+    background-size:cover;
+    color: white;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
+/*    background-position: 0 -40vh; */
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-a {
+    background-color: #0064ff;
+    display: flex;
+    flex-direction: column;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+
+.section-b {
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+
+.section-c {
+    background-color: rgb(255, 63, 63);
+    display: flex;
+    flex-direction: column;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+
 /* everything for the "social quicklinks" */
 
 .social_quicklinks {
@@ -76,6 +122,7 @@ h1 {
 .social_quicklinks .discord { background-image: url(./assets/social/discord.png); }
 .social_quicklinks .bluesky { background-image: url(./assets/social/bluesky.png); }
 .social_quicklinks .twitter { background-image: url(./assets/social/twitter.png); }
+.social_quicklinks .matrix { background-image: url(./assets/social/matrix.png); }
 
 @media (max-width: 1000px) {
     .button {
@@ -90,6 +137,10 @@ h1 {
         justify-content: center;
         margin: 1vh;
         text-align: center;
+    }
+
+    .page-header {
+        background-position: center;
     }
 }
 
